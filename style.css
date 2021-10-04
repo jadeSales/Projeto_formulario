@@ -1,0 +1,145 @@
+body{
+    background: linear-gradient(135deg, #22c1c3, #fdbb2d);
+}
+
+form{
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 500px;
+    margin: 70px 0 100px 500px; 
+    padding: 10px 0 50px 20px; 
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color:rgba(128, 128, 128, 0.726);
+    margin: 40px 20px 50px 0;
+}
+
+.campo-sessao{
+    border: none;
+    display: block;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+label, input{
+    display: block;
+}
+
+label, legend, p{
+    margin-top: 12px;
+}
+
+legend{
+    text-transform: uppercase;
+}
+
+.linha-horizontal{
+    background: rgba(128, 128, 128, 0.726);
+    border: 0.1px solid rgba(128, 128, 128, 0.726);
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+em{
+    color: gray;
+    font-size: 12px;
+    font-style: normal;
+    text-transform:lowercase;
+}
+
+.campo-longo{
+    width: 350px;
+}
+
+.campo-curto{
+    width: 120px;
+}
+
+input{
+    border: 1px solid rgba(128, 128, 128, 0.726);
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+.campo-sessao textarea{
+    border: 1px solid rgba(128, 128, 128, 0.726);
+    border-radius: 5px;
+    margin-top: 10px;
+    resize:none;
+}
+
+.legenda-descricao{
+    margin-top: 20px;
+}
+
+.campo-inline label, .campo-inline input{
+    display: inline-block;
+    height: 12px;
+    margin-top: 0;
+}
+
+.campo-radio, .campo-checkbox{
+    display: block;
+    margin-top: 15px;
+}
+
+.campo-inline label{
+    margin-right: 25px;
+}
+
+.campo-inline p{
+   margin-top: 30px;
+}
+
+.campo-nome-curso{
+    margin-top: 25px;
+}
+
+.campo-sessao select{
+    border: none;
+    border-radius: 5px;
+}
+
+#areasInteresse{
+    border: 1px solid rgba(128, 128, 128, 0.726);
+    height: 110px;
+    width: 300px;
+    margin-top: 10px;
+    
+}  
+
+#estado, #nivelEscolaridade{
+    border: 1px solid rgba(128, 128, 128, 0.726);
+    height: 30px;
+    width: 200px;
+    margin-top: 10px; 
+}
+
+input:focus, select:focus, textarea:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#curriculoUpload{
+    border: none;
+}
+
+.botao-enviar{
+    background: linear-gradient(135deg, #22c1c3 10%, #fdbb2d);
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    margin-left: 155px;    
+}
+
+.botao-enviar:hover{
+    color: #ffffff; 
+    border: 2px solid rgba(255, 254, 254, 0.726);
+}

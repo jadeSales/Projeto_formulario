@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Formulário</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Jade Sales">
+        <meta name="description" content="Formulário para cadastro de currículo">
+        <meta name="keywords" content="cadastro, currículo, vagas de emprego">
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <form action="" method="POST">
+            <h1>Cadastro de currículo</h1>
+
+            <fieldset class="campo-sessao">
+                <legend>Informações pessoais <em>(obrigatório)</em></legend>
+                <div class="linha-horizontal"></div>
+
+                <label for="primeiroNome" class="campo-longo">Nome</label>
+                <input class="campo-longo" type="text" name="primeiroNome" id="primeiroNome" required>
+
+                <label for="sobrenome" >Sobrenome</label>
+                <input class="campo-longo" type="text" name="sobrenome" id="sobrenome" required> 
+             
+                <label for="cpf">CPF</label>
+                <input class="campo-curto" type="text" name="cpf" id="cpf" placeholder="000.000.000-00" cpf-mask="000.000.000-00" maxlength="14" required pattern="[0-9]"> 
+
+                <label for="dataNascimento">Data de nascimento</label>
+                <input type="date" name="dataNascimento" id="dataNascimento">
+            </fieldset>
+
+            <fieldset class="campo-sessao">
+                <legend>Contato <em>(obrigatório)</em></legend>
+                <div class="linha-horizontal"></div>
+
+                <label for="email">Email</label>
+                <input class="campo-longo" type="email" name="email" id="email">
+
+                <label for="telefone">Telefone</label>
+                <input class="campo-curto" type="tel" name="telefone" id="telefone" placeholder="(__)_____-_____" maxlenght="15" pattern="[0-9]">
+
+                <label for="endereco">Endereço</label>
+                <input class="campo-longo" type="text" name="endereco" id="endereco" required>
+
+                <label for="cep">CEP</label>
+                <input class="campo-curto" type="text" name="cep" id="cep" placeholder="_____-___" maxlenght="9" required>
+
+                <label for="cidade">Cidade</label>
+                <input class="campo-longo" type="text" name="cidade" id="cidade">
+                
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option value="0">Selecione seu estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="DF">Distrito Federal</option>
+                </select>
+            </fieldset>
+               
+            <fieldset class="campo-sessao">
+                <legend>Objetivos</legend>
+                <div class="linha-horizontal"></div>
+
+                <label for="objProfissional">Objetivo profissional</label>
+                <input class="campo-longo" type="text" name="objProfissional" id="objProfissional">
+
+                <label for="areasInteresse">Áreas de interesse <em>(aperte ctrl para selecionar mais áreas)</em></label>
+                <select name="areasInteresse" id="areasInteresse" multiple>
+                    <option value="segurancaInformacao">Segurança da Informação </option>
+                    <option value="suporteTecnico">Suporte Técnico</option>
+                    <option value="desenvolvimento">Desenvolvimento de Software</option>
+                    <option value="cientistaDados">Cientista de Dados</option>
+                    <option value="qualidadeSoftware">Qualidade de Software</option>
+                    <option value="infraestrutura">Infraestrutura</option>
+                    <option value="admBancoDados">Administração de Bando de Dados</option>
+                </select>
+
+                <div class="campo-inline"> 
+                    <p>Tipo de contrato</p>
+                    <div class="campo-checkbox">
+                        <input type="checkbox" name="estagio" value="estagio" id="estagio">
+                        <label for="estagio">Estágio</label>
+                    </div>
+                    
+                    <div class="campo-checkbox">
+                        <input type="checkbox" name="clt" value="clt" id="clt">
+                        <label for="clt">CLT</label>
+                    </div>
+                    
+                    <div class="campo-checkbox">
+                        <input type="checkbox" name="pj" value="pj" id="pj">
+                        <label for="pj">PJ</label>
+                    </div>
+
+                    <div class="campo-checkbox">
+                        <input type="checkbox" name="temporario" value="temporario" id="temporario">
+                        <label for="temporario">Temporário</label> 
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="campo-sessao">
+                <legend>Formação acadêmica</legend>
+                <div class="linha-horizontal"></div>
+
+                <label for="nivelEscolaridade"> Nível de Escolaridade <em>(obrigatório)</em></label>
+                <select name="nivelEscolaridade" id="nivelEscolaridade">
+                    <option value="0">Selecione seu nível</option>
+                    <option value="ensMedImc">Ensino médio imcompleto</option>
+                    <option value="ensMedCom">Ensino médio completo</option> 
+                    <option value="ensSupCur">Ensino superior cursando</option>
+                    <option value="ensSupImc">Ensino superior imcompleto</option>
+                    <option value="ensSupCom">Ensino superior completo</option>
+                    <option value="posGradEsp">Pós-graduação - Especialização</option>
+                    <option value="posGradMest">Pós-graduação - Mestrado</option>
+                    <option value="posGradDout">Pós-graduação - Doutorado</option>
+                </select>
+
+                <div class="campo-inline">
+                    <p>Grau acadêmico</p>
+                    <div class="campo-radio">
+                        <input type="radio" name="grauAcademico" value="bacharel" id="grauBacharel">
+                        <label for="grauBacharel">Bacharel</label>
+                    </div>
+                    
+                    <div class="campo-radio">
+                        <input type="radio" name="grauAcademico" value="licenciatura" id="grauLicenciatura">
+                        <label for="grauLicenciatura">Licenciatura</label>
+                    </div>
+                    
+                    <div class="campo-radio">
+                        <input type="radio" name="grauAcademico" value="tecnologo" id="grauTecnologo">
+                        <label for="grauTecnologo">Tecnólogo</label> 
+                    </div>
+                </div>
+
+                <label class="campo-nome-curso"for="nomeCurso">Nome do curso</label>
+                <input class="campo-longo" type="text" name="nomeCurso" id="nomeCurso"> 
+
+                <label for="nomeInstituicao">Nome da instituição</label>
+                <input class="campo-longo" type="text" name="nomeInstituicao" id="nomeInstituicao">
+
+                <label for="conclusaoPrev">Mês e ano de conclusão</label>
+                <input class="campo-curto" type="month" name="conclusaoPrev" id="conclusaoPrev">             
+            </fieldset>
+
+            <fieldset class="campo-sessao">
+                <legend>Experiência profissional</legend>
+                <div class="linha-horizontal"></div>
+
+                <label for="empresa">Empresa</label>
+                <input class="campo-longo" type="text" name="empresa" id="empresa">
+
+                <label for="cargo">Cargo</label>
+                <input class="campo-longo" type="text" name="cargo" id="cargo">
+
+                <label for="dataInicio">Data de Início</label>
+                <input type="date" name="dataInicio" id="dataInicio">
+
+                <label for="dataTermino">Data de Término</label>
+                <input type="date" name="dataTermino" id="dataTermino">
+
+                <label class="legenda-descricao" for="descricao">Descrição das atividades</label>
+                <textarea name="descricao" id="descricao" cols="50" rows="10 "></textarea>   
+
+                <label for="curriculoUpload">Anexar currículo</label>
+                <input type="file" name="curriculoUpload" id="curriculoUpload" accept=".doc, .docx, .pdf">
+            </fieldset>
+             
+            <input class="botao-enviar" type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
