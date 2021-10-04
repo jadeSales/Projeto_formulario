@@ -17,7 +17,6 @@ Alguns destaques:
 🚀 **CSS**
 
 * Background linear-gradient
-* Alteração do tamanho da fonte do placeholder
 * Classes
 * Pseudo-classe :hover e :focus
 * Seletores   
