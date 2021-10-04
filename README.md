@@ -18,7 +18,7 @@ Alguns destaques:
 
 * Background linear-gradient
 * Classes
-* Pseudo-classe :hover e :focus
+* Pseudo-classe :hover e :focus 
 * Seletores   
 
 
